@@ -1,23 +1,27 @@
+// colors
+// blue: #003E47
+// yellow: #FFFB00
+
 import React from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="footer" className="bg-neutral-900 pt-16 pb-8 text-white">
+    <footer id="footer" className="bg-[#002a31] pt-16 pb-8 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 pb-12 border-b border-neutral-700">
-          <div className="col-span-2 md:col-span-1">
+        <div className="grid md:grid-cols-4 gap-8 pb-12 border-b border-[#FFFB00]">
+          <div className="col-span-2 md:col-span-1 max-sm:col-span-1 max-sm:mb-12">
             <div className="flex items-center mb-6">
-              <span className="text-yellow-400 font-bold text-2xl">AMERA</span>
+              <a href='/' className="text-[#FFFB00] font-bold text-2xl">AMERAA FINNWAY</a>
             </div>
-            <p className="text-neutral-300 mb-6">
+            <p className="text-white mb-6 max-sm:text-sm">
               Specializing in high-value project funding and financial solutions across India.
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                href="https://www.linkedin.com/in/vishal-s-kumar-4272725a/"
+                className="text-[#FFFB00] hover:text-yellow-400 transition-colors duration-300"
               >
                 <span className="sr-only">LinkedIn</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -29,28 +33,41 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
-                className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                href="https://www.instagram.com/ameraa_finnway/"
+                className="text-[#FFFB00] hover:text-yellow-400 transition-colors duration-300"
               >
-                <span className="sr-only">Twitter</span>
+                <span className="sr-only">Instagram</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
-                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 2.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0v-1a.75.75 0 0 1 .75-.75zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/ameraa.finnway"
+                className="text-[#FFFB00] hover:text-yellow-400 transition-colors duration-300"
+              >
+                <span className="sr-only">Facebook</span>
+                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 17 22 12z"
                   />
                 </svg>
               </a>
             </div>
           </div>
 
-          <div>
-            <h3 className="text-yellow-300 font-semibold mb-4">Quick Links</h3>
+          <div className='max-sm:text-sm'>
+            <h3 className="text-[#FFFB00] font-semibold mb-4 max-sm:text-base">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
-                  className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                  href="/about"
+                  className="text-white hover:text-yellow-400 transition-colors duration-300"
                 >
                   About Us
                 </a>
@@ -58,7 +75,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                  className="text-white hover:text-yellow-400 transition-colors duration-300"
                 >
                   Contact Us
                 </a>
@@ -66,13 +83,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-yellow-300 font-semibold mb-4">Services</h3>
+          <div className='max-sm:text-sm'>
+            <h3 className="text-[#FFFB00] font-semibold mb-4 max-sm:text-base">Services</h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#"
-                  className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                  className="text-white hover:text-yellow-400 transition-colors duration-300"
                 >
                   Project Funding
                 </a>
@@ -80,7 +97,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                  className="text-white hover:text-yellow-400 transition-colors duration-300"
                 >
                   LC &amp; BG
                 </a>
@@ -88,7 +105,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                  className="text-white hover:text-yellow-400 transition-colors duration-300"
                 >
                   Equity Funding
                 </a>
@@ -96,7 +113,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                  className="text-white hover:text-yellow-400 transition-colors duration-300"
                 >
                   Import-Export
                 </a>
@@ -104,12 +121,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-yellow-300 font-semibold mb-4">Contact Info</h3>
+          <div className='max-sm:text-sm'>
+            <h3 className="text-[#FFFB00] font-semibold mb-4 max-sm:text-base">Contact Info</h3>
             <ul className="space-y-2">
-              <li className="text-neutral-400">Lucknow, Uttar Pradesh</li>
-              <li className="text-neutral-400">info@amerafinance.com</li>
-              <li className="text-neutral-400">+91 XXXXXXXXXX</li>
+              <li className="text-white">2nd Floor, Nanda Bhawan,
+              Sapru Marg, Hazratganj - Lucknow (Uttar Pradesh) - 226001</li>
+              <li className="text-white">- info@ameraafinnway.com</li>
+              <li className="text-white">- +91 9592171057</li>
             </ul>
           </div>
         </div>
@@ -124,7 +142,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                    className="text-white hover:text-[#FFFB00] transition-colors duration-300"
                   >
                     Privacy Policy
                   </a>
@@ -132,7 +150,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-neutral-400 hover:text-yellow-400 transition-colors duration-300"
+                    className="text-white hover:text-[#FFFB00] transition-colors duration-300"
                   >
                     Terms of Service
                   </a>

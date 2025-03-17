@@ -1,25 +1,30 @@
+// colors
+// blue: #003E47
+// yellow: #FFFB00
+
 const FundingCard = ({ icon, title, description }) => {
   return (
-    <div className="bg-neutral-800 rounded-lg p-6 border-l-4 border-yellow-400">
-      <div className="flex items-center mb-4">
+    <div className="max-sm:bg-[#1B4A51]/60 bg-[#1B4A51] max-sm:backdrop-blur-md rounded-lg px-6 max-sm:px-0 max-sm:pl-2 py-4 max-sm:py-2 border-l-4 border-[#FFFB00]">
+      <div className="flex items-center mb-4 max-sm:mb-2">
         <svg
-          className="w-8 h-8 text-yellow-400"
+          className="w-6 h-6 max-sm:w-8 max-sm:h-8 text-[#FFFB00]"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
           {icon}
         </svg>
-        <h3 className="text-xl font-bold text-white ml-4">{title}</h3>
+        <h3 className="text-xl max-sm:text-base font-bold text-white ml-4">{title}</h3>
+        {/* <p className="sm:hidden text-white text-sm">{description}</p> */}
       </div>
-      <p className="text-gray-300">{description}</p>
+      <p className="text-white text-sm">{description}</p>
     </div>
   );
 };
 
 const FundingSection = ({ cards }) => {
   return (
-    <div className="space-y-6 animate__animated animate__fadeInLeft md:animate__fadeInRight">
+    <div className="space-y-3 animate__animated animate__fadeInLeft md:animate__fadeInRight">
       {cards.map((card, index) => (
         <FundingCard
           key={index}
@@ -33,7 +38,7 @@ const FundingSection = ({ cards }) => {
 };
 
 const Requirement = () => {
-  const fundingCardsLeft = [
+  const fundingCardsRight = [
     {
       icon: (
         <path
@@ -71,9 +76,6 @@ const Requirement = () => {
       description:
         "Audited balance sheets from the last two years and cash flow statements",
     },
-  ];
-
-  const fundingCardsRight = [
     {
       icon: (
         <path
@@ -116,24 +118,22 @@ const Requirement = () => {
   ];
 
   return (
-    <section id="requirements" className="py-20 bg-neutral-900">
+    <section id="requirements" className="pb-20 pt-10 bg-[url('/discussion2.jpeg')] max-sm:bg-[url('/discussion222.png')] bg-cover bg-[center_top_0px] bg-no-repeat">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate__animated animate__fadeIn">
-          <h2 className="text-3xl font-bold text-white mb-4">
+        <div className="mb-10 animate__animated animate__fadeIn">
+          <h2 className="text-4xl font-bold text-white mb-2 max-sm:text-center max-sm:text-3xl">
             Funding Requirements
           </h2>
-          <div className="w-20 h-1 bg-yellow-400 mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <FundingSection cards={fundingCardsLeft} />
           <FundingSection cards={fundingCardsRight} />
         </div>
 
-        <div className="mt-12 text-center animate__animated animate__fadeIn">
+        <div className="mt-12 animate__animated animate__fadeIn">
           <a
             href="#contact"
-            className="inline-block bg-yellow-400 text-neutral-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-colors duration-300"
+            className="bg-[#FFFB00] text-neutral-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors duration-300"
           >
             Apply for Funding
           </a>

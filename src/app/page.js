@@ -11,15 +11,15 @@ import Footer from "./Sections/Footer";
 export default function Home() {
   return (
     <>
-   <Navbar/>
+    {/* <Navbar/> */}
     <Hero/>
-    <AboutSection/>
+    {/* <AboutSection/> */}
     <Services/>
     <Process/>
     <Requirement/>
     <Testimonials/>
     <Contact/>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }

@@ -8,14 +8,14 @@ const SectionTitle = ({ title }) => (
 );
 
 const FeatureCard = ({ title, description }) => (
-  <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-yellow-400 animate__animated animate__fadeInLeft">
+  <div className="bg-[#F9F5E7] p-6 rounded-lg shadow-lg border-l-4 border-yellow-400 animate__animated animate__fadeInLeft">
     <h3 className="text-xl font-semibold text-neutral-900 mb-3">{title}</h3>
     <p className="text-neutral-600">{description}</p>
   </div>
 );
 
 const IndustryList = ({ industries }) => (
-  <div className="bg-neutral-900 p-8 rounded-lg animate__animated animate__fadeInRight">
+  <div className="bg-[#361500] p-8 rounded-lg animate__animated animate__fadeInRight">
     <h3 className="text-2xl font-bold text-yellow-400 mb-6">Industries We Serve</h3>
     <div className="grid grid-cols-2 gap-4">
       {industries.map((industry, index) => (
@@ -40,7 +40,7 @@ const AboutSection = () => {
   const industries = ["Healthcare", "Hospitality", "Energy", "Agriculture", "Real Estate", "Education"];
 
   return (
-    <section id="about" className="py-20 bg-neutral-100">
+    <section id="about" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle title="About Amera" />
         <div className="grid lg:grid-cols-2 gap-12 items-center">
