@@ -31,7 +31,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <span className="text-[#FFFB00] font-bold text-2xl">AMERAA FINNWAY</span>
+              <span className="text-[#FFFB00] font-bold text-2xl max-sm:text-xl">AMERAA FINNWAY</span>
             </Link>
           </div>
 
