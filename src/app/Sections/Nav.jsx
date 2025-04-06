@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import YButton from "../Components/YButton";
 import { useRouter } from "next/navigation";
-
+import Image from "next/image";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
@@ -31,6 +31,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
+              <Image src={"/logo1.png"} alt="logo" width={50} height={50} className="mr-4"/>
               <span className="text-[#FFFB00] font-bold text-2xl max-sm:text-xl">AMERAA FINNWAY</span>
             </Link>
           </div>
@@ -44,7 +45,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Button */}
-          <div className="hidden md:block font-semibold">
+          <div className="hidden md:block font-semibold text-black">
             <YButton text="Get a Fund Quote" padding="px-10" />
           </div>
 

@@ -3,7 +3,8 @@
 // yellow: #FFFB00
 
 import React from 'react';
-
+import Image from 'next/image';
+import Link from 'next/link';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -12,9 +13,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 pb-12 border-b border-[#FFFB00]">
           <div className="col-span-2 md:col-span-1 max-sm:col-span-1 max-sm:mb-12">
-            <div className="flex items-center mb-6">
-              <a href='/' className="text-[#FFFB00] font-bold text-2xl">AMERAA FINNWAY</a>
-            </div>
+          <Link href="/" className="flex items-center">
+              <Image src={"/logo1.png"} alt="logo" width={50} height={50} className="mr-4"/>
+              <span className="text-[#FFFB00] font-bold text-2xl max-sm:text-xl">AMERAA FINNWAY</span>
+            </Link>
             <p className="text-white mb-6 max-sm:text-sm">
               Specializing in high-value project funding and financial solutions across India.
             </p>
