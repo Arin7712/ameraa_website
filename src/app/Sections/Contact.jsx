@@ -81,7 +81,11 @@ const Contact = () => {
 
             <div className="bg-white rounded-md w-11/12 flex items-center gap-3 mt-10 max-sm:mt-4 p-6 max-sm:p-2">
               <p className="bg-[#FFFB00] rounded-full w-12 h-12 max-sm:w-8 max-sm:h-8 flex items-center justify-center"><IoIosMail className="text-3xl max-sm:text-lg text-[#002a31]" /></p>
-              <p className="font-bold text-[#003E47] text-2xl max-sm:text-base">ameraafinnway@gmail.com</p>
+              <div className="flex flex-col">
+              <p className="font-bold text-[#003E47] text-2xl max-sm:text-base mb-1">vishal@amerafinnway.com</p>
+              <p className="font-bold text-[#003E47] text-2xl max-sm:text-base">info@amerafinnway.com</p>
+          
+              </div>
             </div>
             <div></div>
           </div>
