@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 pb-12 border-b border-[#FFFB00]">
           <div className="col-span-2 md:col-span-1 max-sm:col-span-1 max-sm:mb-12">
           <Link href="/" className="flex items-center">
-              <Image src={"/logo1.png"} alt="logo" width={50} height={50} className="mr-4"/>
+              <Image src={"/logo2.png"} alt="logo" height={80} width={80} className="mr-4"/>
               <span className="text-[#FFFB00] font-bold text-2xl max-sm:text-xl">AMERAA FINNWAY</span>
             </Link>
             <p className="text-white mb-6 max-sm:text-sm">
