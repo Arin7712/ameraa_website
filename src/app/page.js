@@ -11,6 +11,7 @@ import Footer from "./Sections/Footer";
 export default function Home() {
   return (
     <>
+    Ameraa Website
     {/* <Navbar/> */}
     <Hero/>
     {/* <AboutSection/> */}
